@@ -1,41 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-:root{
-    --Darkcyan: hsl(185, 75%, 39%);
-    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
-    --Darkgrayishblue: hsl(227, 10%, 46%);
-    --Darkgray: hsl(0, 0%, 59%);
-}
-body{
-    padding: 0;
-    margin: 0;
-    
-    background-color: var(--Darkcyan); 
-    background-image: url(images/bg-pattern-top.svg),  url(images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-    font-family: 'Kumbh Sans', sans-serif; 
-    font-size: 18px;
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(0, 0%, 59%);
 }
 
+main{
+  background: url(images/bg-pattern-top.svg) calc((50vw - 100vh)) -50vh no-repeat,
+    url(images/bg-pattern-bottom.svg) 50vw 50vh no-repeat hsl(185, 75%, 39%);
+  background-size: auto 100vh;
+  height:100vh;
+}
 
+section{
+  width:20rem;
+}
 
+h1{
+  color:hsl(229, 23%, 23%)
+}
 
+h1>p{
+  color:hsl(0, 0%, 59%);
+}
 
+ul>li>h3{
+  font-weight:bold;
+  font-size:1.25rem;
+  color:hsl(229, 23%, 23%)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ul>li>p{
+  font-size:0.75rem
+}
 
 
 /*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
